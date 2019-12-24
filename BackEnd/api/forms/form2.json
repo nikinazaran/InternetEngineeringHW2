@@ -1,0 +1,12 @@
+{
+    "title": "Location Picker",
+    "id": "4321",
+    "fields": [
+        {
+            "name": "locloc",
+            "title": "Location",
+            "type": "Location",
+            "required": true
+        }
+    ]
+}

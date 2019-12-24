@@ -1,0 +1,19 @@
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.formSelector{
+  width: fit-content;
+  text-align: center;
+
+}
+
+.flex_container{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}

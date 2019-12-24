@@ -1,0 +1,43 @@
+{
+    "title": "A smaple form",
+    "id": "1234",
+    "fields": [
+        {
+            "name": "First_Name",
+            "title": "First Name",
+            "type": "Text",
+            "required": true
+        },
+        {
+            "name": "date",
+            "title": "Date of Request",
+            "type": "Date",
+            "required": true
+        },
+        {
+            "name": "Request_Type",
+            "title": "Request Type",
+            "type": "Text",
+            "options": [
+                {
+                    "label": "Help",
+                    "value": "Help"
+                },
+                {
+                    "label": "Info",
+                    "value": "Information"
+                }
+            ]
+        },
+        {
+            "name": "num_ppl",
+            "title": "Number of People",
+            "type": "Number"
+        },
+        {
+            "name": "locloc",
+            "title": "Location",
+            "type": "Location"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+function makeField(field, index) {
+  let x;
+  let required = false;
+  if (field.required) required = true;
+  console.log(field);
+  if (field.type === "Text") {
+    x = <Input placeholder={field.title} />;
+  }
+  return (
+    <div key={index}>
+      <Typography.Text>{field.title}</Typography.Text>
+      {x}
+    </div>
+  );
+}
+
+
+class Form extends Component {
+  render() {
+    let formFields = ([{}]);
+    if (this.props.selectedFormJson) {
+      formFields = Array.from(this.props.selectedFormJson.fields);
+    }
+
+    return (
+      <div>
+        <Typography.Text>{this.props.selectedFormJson.title}</Typography.Text>
+        {
+          Array.from(formFields).map((field, index) => makeField(field, index))
+        }
+      </div>
+    );
+  }
+}
